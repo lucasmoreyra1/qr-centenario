@@ -9,12 +9,9 @@
         // Verificar si la carpeta existe
         if (!is_dir($rutaCarpeta)) {
             // Si la carpeta no existe, incluir los archivos
-            try {
                 require 'read.php';
                 require 'generar_qr.php';
-            } catch (\Throwable $th) {
-                echo "Error del servidor 523";
-            }
+
         }
     }
 
