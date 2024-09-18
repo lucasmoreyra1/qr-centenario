@@ -1,0 +1,10 @@
+CREATE DATABASE invitados;
+
+CREATE TABLE invitados (
+	id_invitado INT AUTO_INCREMENT PRIMARY KEY,
+	id_mesa INT,
+	nombre varchar(255),
+	promocion VARCHAR(255),
+	especialidad VARCHAR(255),
+	invitacion_uso BOOLEAN
+);
